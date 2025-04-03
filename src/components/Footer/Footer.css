@@ -1,75 +1,75 @@
 .footer {
-  background-color: #1a1a2e;
-  color: #ffffff;
-  padding: 40px 0 20px;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    padding: 40px 0 20px;
 }
 
 .footer-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .footer-section {
-  flex: 1;
-  min-width: 200px;
-  margin-bottom: 20px;
-  padding: 0 15px;
+    flex: 1;
+    min-width: 200px;
+    margin-bottom: 20px;
+    padding: 0 15px;
 }
 
 .footer-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  position: relative;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    position: relative;
 }
 
 .footer-section h3:after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: -5px;
-  width: 50px;
-  height: 2px;
-  background-color: #4a4a82;
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 50px;
+    height: 2px;
+    background-color: #4a4a82;
 }
 
 .footer-links {
-  list-style: none;
-  padding: 0;
+    list-style: none;
+    padding: 0;
 }
 
 .footer-links li {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .footer-links a,
 .social-link {
-  color: #cccccc;
-  text-decoration: none;
-  transition: all 0.3s ease;
+    color: #cccccc;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 .footer-links a:hover,
 .social-link:hover {
-  color: #ffffff;
-  text-decoration: underline;
+    color: #ffffff;
+    text-decoration: underline;
 }
 
 .social-links {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .social-link {
-  margin-bottom: 8px;
+    margin-bottom: 8px;
 }
 
 .footer-bottom {
-  text-align: center;
-  padding-top: 20px;
-  margin-top: 20px;
-  border-top: 1px solid #333;
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid #333;
 }
