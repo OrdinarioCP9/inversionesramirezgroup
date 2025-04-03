@@ -1,0 +1,175 @@
+.hero-section {
+    height: 100vh;
+    background: linear-gradient(rgba(26, 26, 46, 0.8), rgba(26, 26, 46, 0.9)), url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #4a4a82;
+    color: #ffffff;
+    padding: 15px 30px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+.cta-button:hover {
+    background-color: #2d2d5a;
+}
+
+/* Sección de opciones de inversión */
+.investment-options {
+    padding: 80px 0;
+    background-color: #ffffff;
+}
+
+.investment-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.investment-options h2 {
+    text-align: center;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+}
+
+.investment-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 50px;
+}
+
+.investment-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.investment-card {
+    background-color: #f8f8f8;
+    border-radius: 8px;
+    padding: 30px;
+    width: calc(33.333% - 20px);
+    min-width: 280px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.investment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.investment-card.featured {
+    background-color: #1a1a2e;
+    color: #ffffff;
+}
+
+.featured-label {
+    position: absolute;
+    top: -15px;
+    right: 20px;
+    background-color: #ff7e5f;
+    color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.investment-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.5rem;
+}
+
+.investment-return {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #ff7e5f;
+}
+
+.investment-card.featured .investment-return {
+    color: #ff9f7f;
+}
+
+.investment-features {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.investment-features li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.investment-card.featured .investment-features li {
+    border-bottom: 1px solid #333;
+}
+
+.investment-button {
+    display: inline-block;
+    background-color: #4a4a82;
+    color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.investment-card.featured .investment-button {
+    background-color: #ff7e5f;
+}
+
+.investment-button:hover {
+    background-color: #2d2d5a;
+}
+
+.investment-card.featured .investment-button:hover {
+    background-color: #ff6347;
+}
+
+@media (max-width: 768px) {
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section p {
+        font-size: 1rem;
+    }
+
+    .investment-card {
+        width: 100%;
+    }
+}
