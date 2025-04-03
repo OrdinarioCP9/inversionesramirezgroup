@@ -192,7 +192,7 @@ const ContactForm = () => {
                         </div>
 
                         <div className="form-privacy">
-                            <p>Al enviar este formulario, aceptas nuestra <a href="#">política de privacidad</a> y el uso de tus datos para contactarte.</p>
+                            <p>Al enviar este formulario, aceptas nuestra <a href="/politica-privacidad">política de privacidad</a> y el uso de tus datos para contactarte.</p>
                         </div>
 
                         <button
