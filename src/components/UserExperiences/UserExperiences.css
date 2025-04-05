@@ -1,6 +1,9 @@
-.experiences-section {
-    background-color: #f0f2f5;
+/* Sección de experiencias de usuario - UNIFICADA */
+.experiences-section,
+.user-experiences-section {
+    background-color: #000000; /* Fondo negro */
     padding: 80px 0;
+    color: #C0C0C0; /* Texto plateado */
 }
 
 .experiences-container {
@@ -9,67 +12,267 @@
     padding: 0 20px;
 }
 
-.experiences-section h2 {
+.experiences-section h2,
+.user-experiences-section h2 {
     text-align: center;
-    color: #1a1a2e;
-    margin-bottom: 10px;
+    color: #C0C0C0; /* Texto plateado */
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para destacar */
 }
 
-.experiences-subtitle {
+.experiences-subtitle,
+.user-experiences-section p {
     text-align: center;
-    color: #666;
+    color: #CCCCCC; /* Texto gris claro */
+    font-size: 1.1rem;
     margin-bottom: 50px;
     max-width: 700px;
     margin-left: auto;
     margin-right: auto;
+    line-height: 1.8;
 }
 
-.testimonials-grid {
+/* Contenedor de tarjetas */
+.testimonials-grid,
+.experiences-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
     gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px; 
 }
 
-.testimonial-card {
-    background-color: #ffffff;
+/* Unificación del estilo de todas las tarjetas */
+.testimonial-card,
+.testimonial,
+.experience-card {
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    border: 1px solid rgba(192, 192, 192, 0.2); /* Borde plateado translúcido */
     border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 15px rgba(192, 192, 192, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color: #CCCCCC; /* Texto gris claro */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.testimonial-card:hover,
+.testimonial:hover,
+.experience-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(192, 192, 192, 0.2);
+}
+
+/* Tarjetas de testimonios */
 .testimonial-content {
     padding: 30px;
+    flex: 1 1 auto;
 }
 
 .testimonial-text {
-    color: #555;
+    color: #CCCCCC; /* Texto gris claro */
     font-style: italic;
     line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
 .testimonial-author {
     display: flex;
     align-items: center;
-    padding: 15px 30px;
-    background-color: #f8f8f8;
-    border-top: 1px solid #eee;
+    padding: 20px 30px;
+    background-color: #111111; /* Negro un poco más claro */
+    border-top: 1px solid rgba(192, 192, 192, 0.2); /* Borde plateado translúcido */
 }
 
+/* Asegúrate de que el avatar sea completamente redondo */
 .author-avatar {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 15px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* Fotos redondeadas */
+  margin-right: 15px;
+  border: 2px solid #C0C0C0; /* Borde plateado */
 }
 
-.author-info h4 {
-    margin: 0;
-    color: #1a1a2e;
+/* Añade un margen izquierdo al bloque de información para separarlo de la foto */
+.author-info {
+  margin-left: 45px; /* Ajusta según tu preferencia */
+  margin-top: 15px;
 }
 
-.author-info p {
-    margin: 5px 0 0;
-    color: #666;
+/* Tarjetas de experiencia */
+.experience-card {
+    padding: 0;
+    text-align: center;
+    color: #CCCCCC; /* Texto gris claro */
+}
+
+.experience-card > .card-content {
+    padding: 30px;
+    flex: 1 1 auto;
+}
+
+.experience-card h3 {
+    color: #C0C0C0; /* Título plateado */
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.experience-card p {
+    color: #CCCCCC; /* Texto gris claro */
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* Íconos */
+.experience-icon {
+    font-size: 2.5rem;
+    color: #C0C0C0; /* Íconos plateados */
+    margin-bottom: 15px;
+    transition: color 0.3s ease;
+}
+
+.experience-card:hover .experience-icon {
+    color: #FFFFFF; /* Blanco al pasar el mouse */
+}
+
+/* Botón de llamada a la acción */
+.experience-btn {
+    display: inline-block;
+    background-color: #C0C0C0; /* Fondo plateado */
+    color: #000000; /* Texto negro */
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-btn:hover {
+    background-color: #A9A9A9; /* Plateado más oscuro */
+    transform: translateY(-3px);
+    box-shadow: 0 8px 15px rgba(192, 192, 192, 0.2);
+}
+
+.experience-btn:active {
+    transform: translateY(0);
+}
+
+/* Testimonios individuales */
+.testimonial {
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    border: 1px solid rgba(192, 192, 192, 0.2); /* Borde plateado translúcido */
+    border-radius: 12px;
+    padding: 0;
+    color: #CCCCCC; /* Texto gris claro */
+    text-align: left;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(192, 192, 192, 0.2);
+}
+
+.testimonial p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.testimonial .author {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #C0C0C0; /* Texto plateado */
+}
+
+.testimonial .role {
     font-size: 0.9rem;
+    color: #CCCCCC; /* Texto gris claro */
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .experiences-section,
+    .user-experiences-section {
+        padding: 70px 0;
+    }
+
+    .testimonials-grid,
+    .experiences-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .testimonial-card,
+    .experience-card,
+    .testimonial {
+        padding: 0; /* El contenido internamente controla su propio padding */
+    }
+
+    .experience-card > .card-content,
+    .testimonial-content {
+        padding: 20px;
+    }
+
+    .experience-card .card-footer,
+    .testimonial-author {
+        padding: 15px 20px;
+    }
+
+    .experience-icon {
+        font-size: 2.5rem;
+    }
+
+    .experience-btn {
+        padding: 10px 20px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .experiences-section h2,
+    .user-experiences-section h2 {
+        font-size: 2rem;
+    }
+
+    .experiences-subtitle,
+    .user-experiences-section p {
+        font-size: 0.9rem;
+    }
+
+    .testimonial-card,
+    .experience-card,
+    .testimonial {
+        padding: 15px;
+    }
+
+    .testimonial-content {
+        padding: 20px;
+    }
+
+    .testimonial-author {
+        padding: 10px 20px;
+    }
+
+    .experience-icon {
+        font-size: 2rem;
+    }
+
+    .experience-btn {
+        padding: 8px 16px;
+        font-size: 0.85rem;
+    }
 }

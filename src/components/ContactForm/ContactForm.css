@@ -1,6 +1,5 @@
 .contact-form-section {
-    background-color: #f8f8f8;
-    background-image: linear-gradient(135deg, #f8f8f8 0%, #f2f4f8 100%);
+    background-color: #000000; /* Fondo negro */
     padding: 100px 0;
     position: relative;
     overflow: hidden;
@@ -14,7 +13,7 @@
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    background: linear-gradient(135deg, rgba(74, 74, 130, 0.1), rgba(26, 26, 46, 0.05));
+    background: linear-gradient(135deg, rgba(192, 192, 192, 0.1), rgba(26, 26, 46, 0.05));
     z-index: 1;
 }
 
@@ -28,18 +27,16 @@
 
 .contact-form-section h2 {
     text-align: center;
-    color: #1a1a2e;
+    color: #C0C0C0; /* Texto plateado */
     margin-bottom: 15px;
     font-size: 2.5rem;
     font-weight: 700;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.6s ease forwards;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para destacar */
 }
 
 .form-subtitle {
     text-align: center;
-    color: #666;
+    color: #CCCCCC; /* Texto gris claro */
     margin-bottom: 50px;
     max-width: 600px;
     margin-left: auto;
@@ -59,10 +56,10 @@
 
 /* Formulario principal */
 .contact-form {
-    background-color: #ffffff;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 10px 30px rgba(192, 192, 192, 0.1); /* Sombra plateada */
     flex: 1;
     min-width: 320px;
     transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
@@ -72,8 +69,8 @@
 }
 
 .contact-form:hover {
-    transform: translateY(-5px) scale(1.01);
-    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(192, 192, 192, 0.2); /* Sombra plateada más intensa */
 }
 
 /* Grupos de formulario */
@@ -90,7 +87,7 @@
 }
 
 .form-group.focused label {
-    color: #4a4a82;
+    color: #C0C0C0; /* Actualizado a plateado */
     transform: translateY(-2px);
 }
 
@@ -101,7 +98,7 @@
 label {
     display: block;
     margin-bottom: 10px;
-    color: #333;
+    color: #C0C0C0; /* Texto plateado */
     font-weight: 500;
     font-size: 1rem;
     transition: all 0.3s ease;
@@ -132,27 +129,27 @@ label {
 }
 
 .user-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a4a82' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 3c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm0 14.2a7.2 7.2 0 01-6-3.22c.03-1.99 4-3.08 6-3.08 1.99 0 5.97 1.09 6 3.08a7.2 7.2 0 01-6 3.22z'/%3E%3C/svg%3E");
 }
 
 .email-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a4a82' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z'/%3E%3C/svg%3E");
 }
 
 .phone-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a4a82' viewBox='0 0 24 24'%3E%3Cpath d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z'/%3E%3C/svg%3E");
 }
 
 .money-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a4a82' viewBox='0 0 24 24'%3E%3Cpath d='M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M11.8 10.9c-2.27-.59-3-1.2-3-2.15 0-1.09 1.01-1.85 2.7-1.85 1.78 0 2.44.85 2.5 2.1h2.21c-.07-1.72-1.12-3.3-3.21-3.81V3h-3v2.16c-1.94.42-3.5 1.68-3.5 3.61 0 2.31 1.91 3.46 4.7 4.13 2.5.6 3 1.48 3 2.41 0 .69-.49 1.79-2.7 1.79-2.06 0-2.87-.92-2.98-2.1h-2.2c.12 2.19 1.76 3.42 3.68 3.83V21h3v-2.15c1.95-.37 3.5-1.5 3.5-3.55 0-2.84-2.43-3.81-4.7-4.4z'/%3E%3C/svg%3E");
 }
 
 .investment-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a4a82' viewBox='0 0 24 24'%3E%3Cpath d='M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z'/%3E%3C/svg%3E");
 }
 
 .message-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a4a82' viewBox='0 0 24 24'%3E%3Cpath d='M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z'/%3E%3C/svg%3E");
 }
 
 /* Campos de entrada */
@@ -161,11 +158,11 @@ select,
 textarea {
     width: 100%;
     padding: 14px 16px;
-    border: 2px solid #e0e0e0;
+    border: 2px solid rgba(192, 192, 192, 0.2); /* Borde plateado translúcido */
     border-radius: 8px;
     font-size: 16px;
-    color: #333;
-    background-color: #f9f9f9;
+    color: #CCCCCC; /* Texto gris claro */
+    background-color: #000000; /* Fondo negro */
     transition: all 0.3s ease;
 }
 
@@ -183,23 +180,22 @@ textarea {
     height: 0;
     border-left: 6px solid transparent;
     border-right: 6px solid transparent;
-    border-top: 6px solid #4a4a82;
+    border-top: 6px solid #C0C0C0; /* Actualizado a plateado */
     pointer-events: none;
 }
 
 input:hover,
 select:hover,
 textarea:hover {
-    border-color: #ccc;
-    background-color: #fff;
+    border-color: #C0C0C0; /* Borde plateado */
 }
 
 input:focus,
 select:focus,
 textarea:focus {
-    border-color: #4a4a82;
-    background-color: #fff;
-    box-shadow: 0 0 0 4px rgba(74, 74, 130, 0.1);
+    border-color: #C0C0C0; /* Borde plateado */
+    background-color: #1a1a1a; /* Fondo gris oscuro */
+    box-shadow: 0 0 0 4px rgba(192, 192, 192, 0.2); /* Sombra plateada */
     outline: none;
 }
 
@@ -212,7 +208,7 @@ textarea:focus {
 }
 
 .error-message {
-    color: #e74c3c;
+    color: #E74C3C; /* Texto rojo */
     font-size: 0.85rem;
     margin-top: 8px;
     transform: translateY(-5px);
@@ -247,23 +243,23 @@ textarea {
     margin-right: 10px;
     margin-top: 2px;
     appearance: none;
-    border: 2px solid #e0e0e0;
+    border: 2px solid #C0C0C0; /* Actualizado a plateado */
     border-radius: 4px;
-    background-color: #f9f9f9;
+    background-color: #000000; /* Actualizado a negro */
     cursor: pointer;
     transition: all 0.3s ease;
     position: relative;
 }
 
 .form-checkbox input:checked {
-    background-color: #4a4a82;
-    border-color: #4a4a82;
+    background-color: #C0C0C0; /* Actualizado a plateado */
+    border-color: #C0C0C0; /* Actualizado a plateado */
 }
 
 .form-checkbox input:checked::after {
     content: '✓';
     position: absolute;
-    color: white;
+    color: #000000; /* Negro para contraste */
     font-size: 14px;
     font-weight: bold;
     top: 50%;
@@ -279,7 +275,7 @@ textarea {
 }
 
 .form-checkbox a {
-    color: #4a4a82;
+    color: #C0C0C0; /* Actualizado a plateado */
     text-decoration: none;
     font-weight: 500;
     position: relative;
@@ -293,12 +289,12 @@ textarea {
     height: 1px;
     bottom: -1px;
     left: 0;
-    background-color: #4a4a82;
+    background-color: #C0C0C0; /* Actualizado a plateado */
     transition: width 0.3s ease;
 }
 
 .form-checkbox a:hover {
-    color: #2d2d5a;
+    color: #A9A9A9; /* Plateado más oscuro */
 }
 
 .form-checkbox a:hover::after {
@@ -313,9 +309,9 @@ textarea {
 .data-security-notice {
     margin-top: 25px;
     padding: 15px;
-    background-color: #f1f7ff;
+    background-color: #1a1a1a; /* Actualizado a gris oscuro */
     border-radius: 8px;
-    border-left: 4px solid #4a90e2;
+    border-left: 4px solid #C0C0C0; /* Actualizado a plateado */
     display: flex;
     align-items: center;
 }
@@ -324,7 +320,7 @@ textarea {
     width: 24px;
     height: 24px;
     margin-right: 10px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%234a90e2' viewBox='0 0 24 24'%3E%3Cpath d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -332,14 +328,14 @@ textarea {
 
 .data-security-notice p {
     font-size: 0.9rem;
-    color: #4a5568;
+    color: #CCCCCC; /* Actualizado a gris claro */
     margin: 0;
 }
 
 /* Botón de envío */
 .submit-btn {
-    background-color: #4a4a82;
-    color: #ffffff;
+    background-color: #C0C0C0; /* Fondo plateado */
+    color: #000000; /* Texto negro */
     padding: 16px 24px;
     border: none;
     border-radius: 8px;
@@ -369,9 +365,9 @@ textarea {
 }
 
 .submit-btn:hover {
-    background-color: #383868;
+    background-color: #A9A9A9; /* Plateado más oscuro */
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(74, 74, 130, 0.3);
+    box-shadow: 0 10px 20px rgba(192, 192, 192, 0.3); /* Sombra plateada */
 }
 
 .submit-btn:hover::after {
@@ -383,7 +379,7 @@ textarea {
 }
 
 .submitting {
-    background-color: #383868;
+    background-color: #A9A9A9; /* Actualizado a plateado más oscuro */
     cursor: not-allowed;
     transform: scale(0.98);
 }
@@ -396,7 +392,7 @@ textarea {
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000000' viewBox='0 0 24 24'%3E%3Cpath d='M2.01 21L23 12 2.01 3 2 10l15 2-15 2z'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -406,22 +402,26 @@ textarea {
     display: inline-block;
     width: 20px;
     height: 20px;
-    border: 3px solid rgba(255, 255, 255, 0.3);
+    border: 3px solid rgba(0, 0, 0, 0.3); /* Actualizado para contraste con plateado */
     border-radius: 50%;
-    border-top-color: #ffffff;
+    border-top-color: #000000; /* Actualizado para contraste con plateado */
     animation: spin 0.8s linear infinite;
     margin-right: 10px;
 }
 
 /* Panel lateral de información */
 .contact-info-box {
-    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d5a 100%);
-    color: #ffffff;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); /* Fondo degradado oscuro */
+    color: #C0C0C0; /* Texto plateado */
     padding: 40px;
     border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(192, 192, 192, 0.1); /* Sombra plateada */
     flex: 0 0 320px;
     position: relative;
-    overflow: hidden;
+    overflow: visible;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transform: translateY(30px);
     opacity: 0;
@@ -465,7 +465,7 @@ textarea {
     margin-bottom: 30px;
     position: relative;
     display: inline-block;
-    color: #ffffff;
+    color: #C0C0C0; /* Texto plateado */
 }
 
 .contact-info-box h3::after {
@@ -475,7 +475,7 @@ textarea {
     bottom: -8px;
     width: 40px;
     height: 3px;
-    background-color: #ff7e5f;
+    background-color: #C0C0C0; /* Actualizado a plateado */
     transition: width 0.3s ease;
 }
 
@@ -487,22 +487,27 @@ textarea {
     display: flex;
     align-items: flex-start;
     margin-bottom: 25px;
-    transition: transform 0.3s ease;
+    padding: 15px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 8px;
+    background-color: rgba(192, 192, 192, 0.05); /* Fondo ligeramente gris */
 }
 
 .contact-method:hover {
+    background-color: rgba(192, 192, 192, 0.1);
     transform: translateX(5px);
 }
 
 .contact-icon {
     font-size: 1.8rem;
     margin-right: 15px;
+    color: #C0C0C0; /* Íconos plateados */
     opacity: 0.85;
 }
 
 .contact-label {
     margin: 0;
-    color: rgba(255, 255, 255, 0.7);
+    color: #CCCCCC; /* Texto gris claro */
     font-size: 0.9rem;
     margin-bottom: 5px;
 }
@@ -511,25 +516,26 @@ textarea {
     margin: 0;
     font-weight: 500;
     font-size: 1.05rem;
+    color: #C0C0C0; /* Texto plateado */
 }
 
 .availability-info {
     margin-top: 30px;
     padding: 15px;
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: rgba(192, 192, 192, 0.1); /* Actualizado a plateado translúcido */
     border-radius: 8px;
 }
 
 .availability-info h4 {
     margin: 0 0 10px;
     font-size: 1.1rem;
-    color: #ffffff;
+    color: #C0C0C0; /* Actualizado a plateado */
 }
 
 .availability-info p {
     margin: 0 0 5px;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #CCCCCC; /* Actualizado a gris claro */
 }
 
 .response-time {
@@ -537,7 +543,7 @@ textarea {
     align-items: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: rgba(74, 74, 130, 0.3);
+    background-color: rgba(192, 192, 192, 0.2); /* Actualizado a plateado translúcido */
     border-radius: 6px;
 }
 
@@ -545,7 +551,7 @@ textarea {
     width: 20px;
     height: 20px;
     margin-right: 10px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='white' viewBox='0 0 24 24'%3E%3Cpath d='M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z M12.5 7H11v6l5.25 3.15 0.75-1.23-4.5-2.67z'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z M12.5 7H11v6l5.25 3.15 0.75-1.23-4.5-2.67z'/%3E%3C/svg%3E");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -554,16 +560,16 @@ textarea {
 .response-time p {
     margin: 0;
     font-size: 0.9rem;
-    color: rgba(255, 255, 255, 0.9);
+    color: #CCCCCC; /* Actualizado a gris claro */
 }
 
 /* Mensaje de éxito */
 .success-message {
-    background-color: #ffffff;
+    background-color: #1a1a1a; /* Fondo gris oscuro */
     border-radius: 12px;
     padding: 60px 40px;
     text-align: center;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 40px rgba(192, 192, 192, 0.1); /* Sombra plateada */
     opacity: 0;
     transform: scale(0.9);
     animation: zoomIn 0.5s 0.1s ease-out forwards;
@@ -572,29 +578,29 @@ textarea {
 .success-icon {
     width: 100px;
     height: 100px;
-    background-color: #4CAF50;
-    color: white;
+    background-color: #C0C0C0; /* Actualizado a plateado */
+    color: #000000; /* Texto negro para contraste */
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 50px;
     margin: 0 auto 30px;
-    box-shadow: 0 10px 25px rgba(76, 175, 80, 0.4);
+    box-shadow: 0 10px 25px rgba(192, 192, 192, 0.4); /* Actualizado a plateado */
     opacity: 0;
     transform: scale(0.5);
     animation: scaleIn 0.5s 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
 }
 
 .success-message h2 {
-    color: #1a1a2e;
+    color: #C0C0C0; /* Texto plateado */
     margin-bottom: 20px;
     opacity: 0;
     animation: fadeInUp 0.5s 0.6s ease forwards;
 }
 
 .success-message p {
-    color: #666;
+    color: #CCCCCC; /* Texto gris claro */
     margin-bottom: 15px;
     font-size: 1.1rem;
     opacity: 0;
@@ -602,14 +608,14 @@ textarea {
 }
 
 .highlight-text {
-    color: #4a4a82;
+    color: #C0C0C0; /* Actualizado a plateado */
     font-weight: 600;
 }
 
 .success-details {
     margin-top: 30px;
     padding: 20px;
-    background-color: #f8f9fa;
+    background-color: #2d2d2d; /* Actualizado a gris más oscuro */
     border-radius: 8px;
     text-align: left;
     opacity: 0;
@@ -627,12 +633,12 @@ textarea {
 
 .detail-label {
     font-weight: 600;
-    color: #4a4a82;
+    color: #C0C0C0; /* Actualizado a plateado */
     width: 150px;
 }
 
 .detail-value {
-    color: #333;
+    color: #CCCCCC; /* Actualizado a gris claro */
 }
 
 /* Animaciones */
@@ -711,10 +717,6 @@ textarea {
         padding: 70px 0;
     }
 
-    .contact-form-section h2 {
-        font-size: 2rem;
-    }
-
     .contact-form,
     .contact-info-box {
         padding: 30px;
@@ -758,4 +760,104 @@ textarea {
         width: 100%;
         margin-bottom: 2px;
     }
+}
+
+/* Sección de ventajas */
+.advantages-section {
+  padding: 80px 0;
+  background-color: #000000; /* Fondo negro */
+}
+
+.advantages-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.advantages-section h2 {
+  text-align: center;
+  color: #C0C0C0; /* Texto plateado */
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para destacar */
+}
+
+.advantages-subtitle {
+  text-align: center;
+  color: #CCCCCC; /* Texto gris claro */
+  margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.advantage-card {
+  background-color: #1a1a1a; /* Fondo gris oscuro */
+  border: 1px solid rgba(192, 192, 192, 0.2); /* Borde plateado translúcido */
+  border-radius: 8px;
+  padding: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  color: #CCCCCC; /* Texto gris claro */
+}
+
+.advantage-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(192, 192, 192, 0.3); /* Sombra plateada */
+}
+
+.advantage-icon {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #C0C0C0; /* Ícono plateado */
+}
+
+.advantage-card h3 {
+  color: #C0C0C0; /* Título plateado */
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.advantage-card p {
+  color: #CCCCCC; /* Texto gris claro */
+  line-height: 1.6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .advantages-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .advantages-subtitle {
+    font-size: 1rem;
+  }
+
+  .advantage-card {
+    padding: 20px;
+  }
+
+  .advantage-icon {
+    font-size: 2.5rem;
+  }
+}
+
+/* Asegúrate de que el avatar sea completamente redondo */
+.author-avatar {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%; /* Fotos redondeadas */
+  margin-right: 15px;
+  border: 2px solid #C0C0C0; /* Borde plateado */
+}
+
+/* Añade un margen izquierdo al bloque de información para separarlo de la foto */
+.author-info {
+  margin-left: 10px; /* Ajusta según tu preferencia */
 }
