@@ -409,63 +409,36 @@ textarea {
     margin-right: 10px;
 }
 
-/* Panel lateral de información */
+/* Panel lateral de información - Mejoras */
 .contact-info-box {
-    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); /* Fondo degradado oscuro */
-    color: #C0C0C0; /* Texto plateado */
+    background: linear-gradient(145deg, #1a1a1a 0%, #2d2d2d 100%); /* Gradiente mejorado */
+    color: #C0C0C0;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(192, 192, 192, 0.1); /* Sombra plateada */
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25), 0 5px 15px rgba(192, 192, 192, 0.1); /* Sombra más pronunciada */
     flex: 0 0 320px;
     position: relative;
     overflow: visible;
     word-wrap: break-word;
     overflow-wrap: break-word;
     white-space: normal;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
     transform: translateY(30px);
     opacity: 0;
     animation: fadeInUp 0.6s 0.4s ease forwards;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
-
-.contact-info-box::before {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 200px;
-    height: 200px;
-    background-color: rgba(255, 255, 255, 0.03);
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.contact-info-box::after {
-    content: '';
-    position: absolute;
-    bottom: -80px;
-    left: -80px;
-    width: 250px;
-    height: 250px;
-    background-color: rgba(255, 255, 255, 0.02);
-    border-radius: 50%;
-    z-index: 1;
-}
-
-.contact-info-box>* {
-    position: relative;
-    z-index: 2;
+    border-left: 3px solid #C0C0C0; /* Borde plateado a la izquierda */
 }
 
 .contact-info-box h3 {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     margin-bottom: 30px;
     position: relative;
     display: inline-block;
-    color: #C0C0C0; /* Texto plateado */
+    color: #C0C0C0;
+    letter-spacing: 0.5px; /* Mejor espaciado entre letras */
+    font-weight: 600;
 }
 
 .contact-info-box h3::after {
@@ -475,12 +448,8 @@ textarea {
     bottom: -8px;
     width: 40px;
     height: 3px;
-    background-color: #C0C0C0; /* Actualizado a plateado */
-    transition: width 0.3s ease;
-}
-
-.contact-info-box:hover h3::after {
-    width: 100%;
+    background-color: #C0C0C0;
+    transition: width 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Transición más suave */
 }
 
 .contact-method {
@@ -488,79 +457,72 @@ textarea {
     align-items: flex-start;
     margin-bottom: 25px;
     padding: 15px;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    border-radius: 8px;
-    background-color: rgba(192, 192, 192, 0.05); /* Fondo ligeramente gris */
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    border-radius: 10px;
+    background-color: rgba(192, 192, 192, 0.05);
+    border: 1px solid rgba(192, 192, 192, 0.1); /* Borde sutil */
+    position: relative;
+    overflow: hidden;
+}
+
+.contact-method::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #C0C0C0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
 }
 
 .contact-method:hover {
-    background-color: rgba(192, 192, 192, 0.1);
-    transform: translateX(5px);
+    background-color: rgba(192, 192, 192, 0.15);
+    transform: translateX(5px) scale(1.02);
+    border-color: rgba(192, 192, 192, 0.2);
+}
+
+.contact-method:hover::before {
+    opacity: 1;
 }
 
 .contact-icon {
     font-size: 1.8rem;
     margin-right: 15px;
-    color: #C0C0C0; /* Íconos plateados */
+    color: #C0C0C0;
     opacity: 0.85;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.contact-method:hover .contact-icon {
+    transform: scale(1.1);
+    opacity: 1;
 }
 
 .contact-label {
     margin: 0;
-    color: #CCCCCC; /* Texto gris claro */
+    color: #CCCCCC;
     font-size: 0.9rem;
     margin-bottom: 5px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.contact-method:hover .contact-label {
+    color: #FFFFFF; /* Mayor contraste al hacer hover */
 }
 
 .contact-value {
     margin: 0;
     font-weight: 500;
     font-size: 1.05rem;
-    color: #C0C0C0; /* Texto plateado */
+    color: #C0C0C0;
+    transition: color 0.3s ease;
 }
 
-.availability-info {
-    margin-top: 30px;
-    padding: 15px;
-    background-color: rgba(192, 192, 192, 0.1); /* Actualizado a plateado translúcido */
-    border-radius: 8px;
-}
-
-.availability-info h4 {
-    margin: 0 0 10px;
-    font-size: 1.1rem;
-    color: #C0C0C0; /* Actualizado a plateado */
-}
-
-.availability-info p {
-    margin: 0 0 5px;
-    font-size: 0.9rem;
-    color: #CCCCCC; /* Actualizado a gris claro */
-}
-
-.response-time {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    padding: 10px;
-    background-color: rgba(192, 192, 192, 0.2); /* Actualizado a plateado translúcido */
-    border-radius: 6px;
-}
-
-.response-icon {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23C0C0C0' viewBox='0 0 24 24'%3E%3Cpath d='M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z M12.5 7H11v6l5.25 3.15 0.75-1.23-4.5-2.67z'/%3E%3C/svg%3E");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.response-time p {
-    margin: 0;
-    font-size: 0.9rem;
-    color: #CCCCCC; /* Actualizado a gris claro */
+.contact-method:hover .contact-value {
+    color: #FFFFFF; /* Mayor contraste al hacer hover */
 }
 
 /* Mensaje de éxito */
@@ -709,6 +671,12 @@ textarea {
     .contact-info-box {
         order: -1;
         flex: auto;
+        margin-bottom: 30px;
+        animation-delay: 0.2s;
+    }
+    
+    .contact-info-box h3 {
+        font-size: 1.5rem;
     }
 }
 
@@ -725,6 +693,18 @@ textarea {
     .form-row {
         grid-template-columns: 1fr;
         gap: 25px;
+    }
+    
+    .contact-method {
+        padding: 12px;
+    }
+    
+    .contact-icon {
+        font-size: 1.6rem;
+    }
+    
+    .availability-info, .response-time {
+        padding: 15px;
     }
 }
 
@@ -759,6 +739,41 @@ textarea {
     .detail-label {
         width: 100%;
         margin-bottom: 2px;
+    }
+    
+    .contact-info-box {
+        padding: 25px;
+    }
+    
+    .contact-method {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 15px 12px;
+    }
+    
+    .contact-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+    
+    .contact-details {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .availability-info h4 {
+        justify-content: center;
+    }
+    
+    .response-time {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .response-icon {
+        margin-right: 0;
+        margin-bottom: 10px;
     }
 }
 
@@ -860,4 +875,54 @@ textarea {
 /* Añade un margen izquierdo al bloque de información para separarlo de la foto */
 .author-info {
   margin-left: 10px; /* Ajusta según tu preferencia */
+}
+
+/* Información de disponibilidad */
+.availability-info {
+    margin-top: 30px;
+    padding: 18px;
+    background-color: rgba(192, 192, 192, 0.1);
+    border-radius: 10px;
+    border: 1px solid rgba(192, 192, 192, 0.15); /* Borde sutil */
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.availability-info:hover {
+    background-color: rgba(192, 192, 192, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.availability-info h4 {
+    margin: 0 0 12px;
+    font-size: 1.1rem;
+    color: #C0C0C0;
+    display: flex;
+    align-items: center;
+}
+
+.availability-info h4::before {
+    content: '⏰'; /* Emoji de reloj */
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+.availability-info p {
+    margin: 0 0 8px;
+    font-size: 0.9rem;
+    color: #CCCCCC;
+    padding-left: 5px;
+    border-left: 2px solid rgba(192, 192, 192, 0.3);
+    transition: all 0.3s ease;
+}
+
+.availability-info p:hover {
+    border-left-color: #C0C0C0;
+    padding-left: 8px;
+    color: #FFFFFF;
+}
+
+.availability-info p:last-child {
+    margin-bottom: 0;
 }

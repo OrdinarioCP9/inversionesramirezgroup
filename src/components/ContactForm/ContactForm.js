@@ -363,10 +363,12 @@ const ContactForm = () => {
                             </div>
                         </div>
                         <div className="contact-method">
-                            <span className="contact-icon">📧</span>
-                            <div>
-                                <p className="contact-label">Email:</p>
-                                <p className="contact-value">contacto@inversionesgrupo.com</p>
+                            <div className="contact-icon-wrapper">
+                                <i className="contact-icon fa fa-envelope"></i>
+                            </div>
+                            <div className="contact-info">
+                                <p className="contact-label">Email</p>
+                                <p className="contact-value">contacto@inversionesramirezgroup.com</p>
                             </div>
                         </div>
                         <div className="contact-method">
@@ -379,8 +381,11 @@ const ContactForm = () => {
 
                         <div className="availability-info">
                             <h4>Horario de atención</h4>
-                            <p>Lunes a Viernes: 9:00 AM - 6:00 PM</p>
-                            <p>Sábados: 10:00 AM - 2:00 PM</p>
+                            <div className="availability-hours">
+                                <p><span className="day">Lunes a Viernes:</span> <span className="hours">9:00 - 18:00</span></p>
+                                <p><span className="day">Sábados:</span> <span className="hours">9:00 - 14:00</span></p>
+                                <p><span className="day">Domingos:</span> <span className="hours">Cerrado</span></p>
+                            </div>
                         </div>
 
                         <div className="response-time">
