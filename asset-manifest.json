@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/grupo-inversiones/static/css/main.bd26a741.css",
+    "main.js": "/grupo-inversiones/static/js/main.e1347e94.js",
+    "static/js/453.f717311f.chunk.js": "/grupo-inversiones/static/js/453.f717311f.chunk.js",
+    "index.html": "/grupo-inversiones/index.html",
+    "main.bd26a741.css.map": "/grupo-inversiones/static/css/main.bd26a741.css.map",
+    "main.e1347e94.js.map": "/grupo-inversiones/static/js/main.e1347e94.js.map",
+    "453.f717311f.chunk.js.map": "/grupo-inversiones/static/js/453.f717311f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bd26a741.css",
+    "static/js/main.e1347e94.js"
+  ]
+}
